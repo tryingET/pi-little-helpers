@@ -1,0 +1,72 @@
+{
+  "name": "pi-little-helpers",
+  "version": "0.1.0",
+  "description": "pi extension package for little-helpers workflows in pi",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryinget/pi-little-helpers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tryinget/pi-little-helpers/issues"
+  },
+  "homepage": "https://github.com/tryinget/pi-little-helpers#readme",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "little-helpers"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "fix": "bash ./scripts/quality-gate.sh fix",
+    "lint": "bash ./scripts/quality-gate.sh lint",
+    "typecheck": "bash ./scripts/quality-gate.sh typecheck",
+    "quality:pre-commit": "bash ./scripts/quality-gate.sh pre-commit",
+    "quality:pre-push": "bash ./scripts/quality-gate.sh pre-push",
+    "quality:ci": "bash ./scripts/quality-gate.sh ci",
+    "check": "npm run quality:ci",
+    "test": "npm run quality:ci",
+    "docs:list": "bash ./scripts/docs-list.sh",
+    "docs:list:workspace": "bash ./scripts/docs-list.sh --workspace --discover",
+    "docs:list:json": "bash ./scripts/docs-list.sh --json",
+    "release:check": "bash ./scripts/release-check.sh",
+    "release:check:quick": "SKIP_PI_SMOKE=1 bash ./scripts/release-check.sh"
+  },
+  "files": [
+    "extensions/code-block-picker.ts",
+    "extensions/stash.ts",
+    "extensions/package-update-notify.ts",
+    "extensions/package-utils.ts",
+    "prompts",
+    "examples",
+    "policy/security-policy.json",
+    "policy/stack-lane.json"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/code-block-picker.ts",
+      "./extensions/stash.ts",
+      "./extensions/package-update-notify.ts"
+    ],
+    "prompts": [
+      "./prompts"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.14"
+  },
+  "overrides": {
+    "fast-xml-parser": "5.3.6"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*"
+  }
+}
