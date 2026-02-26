@@ -41,9 +41,9 @@
   },
   "files": [
     "extensions/code-block-picker.ts",
-    "extensions/stash.ts",
     "extensions/package-update-notify.ts",
     "extensions/package-utils.ts",
+    "extensions/stash.ts",
     "prompts",
     "examples",
     "policy/security-policy.json",
@@ -52,8 +52,9 @@
   "pi": {
     "extensions": [
       "./extensions/code-block-picker.ts",
-      "./extensions/stash.ts",
-      "./extensions/package-update-notify.ts"
+      "./extensions/package-update-notify.ts",
+      "./extensions/package-utils.ts",
+      "./extensions/stash.ts"
     ],
     "prompts": [
       "./prompts"

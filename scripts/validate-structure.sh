@@ -66,11 +66,7 @@ required_files=(
   "docs/project/vision.md"
   "docs/project/incentives.md"
   "docs/project/resources.md"
-  "docs/project/skills.md"
-  "docs/project/strategic_goals.md"
-  "docs/project/tactical_goals.md"
   "NEXT_SESSION_PROMPT.md"
-  "docs/dev/status.md"
   "docs/tech-stack.local.md"
   "docs/dev/CONTRIBUTING.md"
   "docs/dev/EXTENSION_SOP.md"
@@ -95,7 +91,6 @@ required_dirs=(
   ".github/ISSUE_TEMPLATE"
   ".vscode"
   "docs/org"
-  "docs/dev/plans"
   "examples"
   "external"
   "ontology"
@@ -166,12 +161,6 @@ while IFS= read -r -d '' source_file; do
     ((errors+=1))
   fi
 done < <(find . -type f ! -path "./.git/*" ! -path "./node_modules/*" -print0)
-
-plan_count=$(find "docs/dev/plans" -maxdepth 1 -type f -name "*.md" | wc -l | tr -d ' ')
-if [[ "$plan_count" -lt 1 ]]; then
-  echo "docs/dev/plans must contain at least one markdown plan file" >&2
-  ((errors+=1))
-fi
 
 for copier_key in "_src_path:" "repo_name:" "command_name:"; do
   if ! grep -q "^${copier_key}" ".copier-answers.yml"; then
