@@ -96,6 +96,9 @@ export default function codeBlockPickerExtension(pi: ExtensionAPI) {
       return;
     }
 
+    // Reverse so latest blocks appear first
+    blocks.reverse();
+
     // Build select items
     const items: SelectItem[] = blocks.map((block, index) => ({
       value: String(index),
