@@ -13,16 +13,20 @@ system4d:
 
 ## Current state
 
+- **Published:** [npmjs.com/package/pi-little-helpers](https://www.npmjs.com/package/pi-little-helpers)
+- **Repo:** [github.com/tryingET/pi-little-helpers](https://github.com/tryingET/pi-little-helpers)
 - 3 extensions: `code-block-picker`, `package-update-notify`, `stash`
-- 1 shared lib: `lib/package-utils.ts` (extracted from extensions folder)
+- 1 shared lib: `lib/package-utils.ts`
 - Prompts: `implementation-planning`, `security-review`
 
 ## Recent changes
 
-- Moved `package-utils.ts` to `lib/` to fix pi extension loading error
+- v0.1.2: Simplified README, fixed docs
+- v0.1.1: Moved `package-utils.ts` to `lib/`
+- v0.1.0: Initial npm publish
 
 ## Potential next steps
 
 - Add tests for extensions
-- Publish to npm (run `npm run release:check` first)
 - Add more prompts as needed
+- Set up trusted publishing for CI releases

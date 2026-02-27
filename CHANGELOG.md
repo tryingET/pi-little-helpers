@@ -13,21 +13,23 @@ system4d:
 
 All notable changes to this project should be documented here.
 
-## [0.1.1](https://github.com/tryingET/pi-little-helpers/compare/v0.1.0...v0.1.1) (2026-02-27)
+## [0.1.2](https://github.com/tryingET/pi-little-helpers/compare/v0.1.1...v0.1.2) (2026-02-27)
 
+### Changed
+
+- Simplified README: removed scaffold template language, added install instructions.
+- Fixed EXTENSION_SOP.md: removed reference to deleted plans directory.
+- Updated NEXT_SESSION_PROMPT.md with current state.
+
+## [0.1.1](https://github.com/tryingET/pi-little-helpers/compare/v0.1.0...v0.1.1) (2026-02-27)
 
 ### Bug Fixes
 
-* move package-utils out of extensions folder ([c0a1154](https://github.com/tryingET/pi-little-helpers/commit/c0a1154cfb531272b6ce225708c466d45d06e8b8))
+- move package-utils out of extensions folder ([c0a1154](https://github.com/tryingET/pi-little-helpers/commit/c0a1154cfb531272b6ce225708c466d45d06e8b8))
 
-## [0.1.1] - 2026-02-27
-
-### Fixed
-
-- Moved `package-utils.ts` from `extensions/` to `lib/` to fix pi extension loading error (utility modules must not be in extensions folder).
-
-## [0.1.0] - 2026-02-08
+## [0.1.0](https://github.com/tryingET/pi-little-helpers/compare/v0.0.0...v0.1.0) (2026-02-27)
 
 ### Added
 
-- Initial production-ready scaffold generated from template v2.
+- Initial release with `code-block-picker`, `package-update-notify`, and `stash` extensions.
+- Published to npm.

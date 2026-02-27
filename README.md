@@ -11,60 +11,15 @@ system4d:
 
 # pi-little-helpers
 
-Production-ready starter scaffold for a pi extension package.
+A pi extension package with utilities for code block selection, package update notifications, and conversation stashing.
 
-## Quickstart
+## Install
 
-1. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-2. For active development, rely on auto-discovery:
-
-   When you're in this project directory, pi automatically discovers the `package.json` and loads extensions defined in `pi.extensions`. No manual install needed.
-
-## Local Development vs Global Install
-
-**Important:** Avoid double-loading by understanding pi's package identity:
-
-| Source | Identity |
-|--------|----------|
-| npm package | Package name (`pi-little-helpers`) |
-| git source | Repository URL |
-| Local path | Resolved absolute path |
-
-**During local development:**
-- Do NOT add this package to global `~/.pi/agent/settings.json`
-- Rely on project auto-discovery when working in this directory
-- Use `pi -e /path/to/package` if you need the extension in another project temporarily
-
-**After publishing to npm:**
 ```bash
 pi install npm:pi-little-helpers
 ```
 
-**When both exist:**
-- Local path and npm package are DIFFERENT identities → both load → conflicts
-- Solution: During active development, remove the npm entry from global settings
-
-To temporarily disable a global package while developing locally:
-```bash
-# Remove from global settings
-pi remove npm:pi-little-helpers
-
-# Or manually edit ~/.pi/agent/settings.json and remove from packages array
-```
-
-To quickly test the extension in another project without installing:
-```bash
-pi -e /path/to/pi-little-helpers
-```
-
 ## Extensions
-
-This package provides three pi extensions:
 
 | Extension | Description |
 |-----------|-------------|
@@ -73,6 +28,18 @@ This package provides three pi extensions:
 | `stash` | Manage conversation stashes for context switching |
 
 Shared utilities live in `lib/package-utils.ts` (used by package-update-notify).
+
+## Development
+
+1. Clone and install:
+
+   ```bash
+   git clone https://github.com/tryingET/pi-little-helpers.git
+   cd pi-little-helpers
+   npm install
+   ```
+
+2. Pi auto-discovers extensions when working in this directory.
 
 ## Runtime dependencies
 

@@ -15,7 +15,6 @@ system4d:
 
 - Define scope and acceptance criteria.
 - Run `npm run docs:list` and read docs matching your task domain.
-- Capture work in `docs/dev/plans/`.
 - Confirm risks and dependencies.
 
 ## 2) Implement
