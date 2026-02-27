@@ -13,6 +13,13 @@ system4d:
 
 All notable changes to this project should be documented here.
 
+## [0.2.0](https://github.com/tryingET/pi-little-helpers/compare/v0.1.3...v0.2.0) (2026-02-27)
+
+### Changed
+
+- **BREAKING**: Renamed package to `@tryinget/pi-little-helpers` (scoped)
+- Update your install command: `pi install npm:@tryinget/pi-little-helpers`
+
 ## [0.1.3](https://github.com/tryingET/pi-little-helpers/compare/v0.1.2...v0.1.3) (2026-02-27)
 
 

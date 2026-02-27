@@ -9,14 +9,14 @@ system4d:
   fog: "Unknown runtime integration edge cases until first live sync."
 ---
 
-# pi-little-helpers
+# @tryinget/pi-little-helpers
 
 A pi extension package with utilities for code block selection, package update notifications, and conversation stashing.
 
 ## Install
 
 ```bash
-pi install npm:pi-little-helpers
+pi install npm:@tryinget/pi-little-helpers
 ```
 
 ## Extensions
