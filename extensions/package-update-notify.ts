@@ -22,7 +22,7 @@ import {
   readSettings,
   resolveGitRef,
   shouldRunAutoCheck,
-} from "./package-utils.js";
+} from "../lib/package-utils.js";
 
 async function checkPackageUpdates(cwd: string): Promise<CheckResult> {
   const projectSettingsPath = resolve(cwd, ".pi", "settings.json");
