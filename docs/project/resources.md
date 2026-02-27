@@ -11,7 +11,8 @@ system4d:
 
 # Resources
 
-- [Extension entrypoint](../../extensions/little-helpers.ts)
+- [Extensions](../../extensions/) — `code-block-picker.ts`, `package-update-notify.ts`, `stash.ts`
+- [Shared utilities](../../lib/package-utils.ts)
 - [Prompt templates](../../prompts)
 - [Organization operating model](../org/operating_model.md)
 - [Security policy](../../policy/security-policy.json)
