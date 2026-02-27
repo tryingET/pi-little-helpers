@@ -11,4 +11,18 @@ system4d:
 
 # Next session prompt for pi-little-helpers
 
-Use this file to capture exact follow-up tasks for the next coding session.
+## Current state
+
+- 3 extensions: `code-block-picker`, `package-update-notify`, `stash`
+- 1 shared lib: `lib/package-utils.ts` (extracted from extensions folder)
+- Prompts: `implementation-planning`, `security-review`
+
+## Recent changes
+
+- Moved `package-utils.ts` to `lib/` to fix pi extension loading error
+
+## Potential next steps
+
+- Add tests for extensions
+- Publish to npm (run `npm run release:check` first)
+- Add more prompts as needed

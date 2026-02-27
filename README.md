@@ -21,13 +21,7 @@ Production-ready starter scaffold for a pi extension package.
    npm install
    ```
 
-2. Test with pi (one-off, doesn't persist):
-
-   ```bash
-   pi -e ./extensions/little-helpers.ts
-   ```
-
-3. For active development, rely on auto-discovery:
+2. For active development, rely on auto-discovery:
 
    When you're in this project directory, pi automatically discovers the `package.json` and loads extensions defined in `pi.extensions`. No manual install needed.
 
@@ -68,22 +62,24 @@ To quickly test the extension in another project without installing:
 pi -e /path/to/pi-little-helpers
 ```
 
-## Runtime dependencies and packaged files
+## Extensions
+
+This package provides three pi extensions:
+
+| Extension | Description |
+|-----------|-------------|
+| `code-block-picker` | Interactive code block selection from assistant responses |
+| `package-update-notify` | Checks for updates to pinned npm/git packages in pi settings |
+| `stash` | Manage conversation stashes for context switching |
+
+Shared utilities live in `lib/package-utils.ts` (used by package-update-notify).
+
+## Runtime dependencies
 
 This extension expects pi host runtime APIs and declares them as `peerDependencies`:
 
 - `@mariozechner/pi-coding-agent`
 - `@mariozechner/pi-ai`
-
-For npm publishing, `package.json` uses a `files` whitelist so required runtime artifacts are explicit:
-
-- `extensions/little-helpers.ts`
-- `prompts/`
-- `examples/`
-- `policy/security-policy.json`
-- `policy/stack-lane.json`
-
-If your extension also needs extra runtime assets, add them to `files` intentionally.
 
 When using UI APIs (`ctx.ui`), guard interactive-only behavior with `ctx.hasUI` so `pi -p` non-interactive runs stay stable.
 
@@ -268,11 +264,7 @@ After sync, run `/reload` in pi.
 - [Project incentives](docs/project/incentives.md)
 - [Project resources](docs/project/resources.md)
 - [Tech stack local override](docs/tech-stack.local.md)
-- [Project skills](docs/project/skills.md)
-- [Strategic goals](docs/project/strategic_goals.md)
-- [Tactical goals](docs/project/tactical_goals.md)
 - [Contributor guide](docs/dev/CONTRIBUTING.md)
 - [Extension SOP](docs/dev/EXTENSION_SOP.md)
 - [Trusted publishing runbook](docs/dev/trusted_publishing.md)
 - [Next session prompt](NEXT_SESSION_PROMPT.md)
-- [Status](docs/dev/status.md)

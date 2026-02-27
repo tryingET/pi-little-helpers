@@ -7,7 +7,7 @@ system4d:
   fog: "Hidden constraints unless assumptions are surfaced."
 ---
 
-Create an implementation plan for this request: $@
+Create an implementation plan for this request.
 
 Include:
 - Scope and non-goals

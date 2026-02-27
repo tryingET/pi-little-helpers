@@ -13,6 +13,12 @@ system4d:
 
 All notable changes to this project should be documented here.
 
+## [0.1.1] - 2026-02-27
+
+### Fixed
+
+- Moved `package-utils.ts` from `extensions/` to `lib/` to fix pi extension loading error (utility modules must not be in extensions folder).
+
 ## [0.1.0] - 2026-02-08
 
 ### Added

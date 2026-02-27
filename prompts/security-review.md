@@ -7,7 +7,7 @@ system4d:
   fog: "Partial context can hide exploit paths."
 ---
 
-Review this change for security concerns: $@
+Review this change for security concerns.
 
 Focus on:
 - Input validation and injection risk
