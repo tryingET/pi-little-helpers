@@ -1,6 +1,6 @@
 {
   "name": "pi-little-helpers",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "pi extension package for little-helpers workflows in pi",
   "type": "module",
   "license": "MIT",
