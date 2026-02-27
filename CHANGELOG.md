@@ -13,6 +13,22 @@ system4d:
 
 All notable changes to this project should be documented here.
 
+## [1.0.0](https://github.com/tryingET/pi-little-helpers/compare/v0.2.0...v1.0.0) (2026-02-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Package renamed from 'pi-little-helpers' to '@tryinget/pi-little-helpers'. Update your install command to: pi install npm:@tryinget/pi-little-helpers
+
+### Features
+
+* rename to @tryinget/pi-little-helpers (scoped package) ([4f1d9c1](https://github.com/tryingET/pi-little-helpers/commit/4f1d9c1692ee665469d4f92c88ad7617aa8eb471))
+
+
+### Bug Fixes
+
+* move package-utils out of extensions folder ([c0a1154](https://github.com/tryingET/pi-little-helpers/commit/c0a1154cfb531272b6ce225708c466d45d06e8b8))
+
 ## [0.2.0](https://github.com/tryingET/pi-little-helpers/compare/v0.1.3...v0.2.0) (2026-02-27)
 
 ### Changed
