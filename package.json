@@ -60,7 +60,7 @@
     ]
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.6"
+    "@biomejs/biome": "2.4.8"
   },
   "overrides": {
     "fast-xml-parser": "5.3.6"
